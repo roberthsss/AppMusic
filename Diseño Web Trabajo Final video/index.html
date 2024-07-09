@@ -1,0 +1,364 @@
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+            <!-- Metadatos del documento -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AppMusic</title>
+         <!-- Integración de iconos FontAwesome para estilos -->
+        <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+         <!-- Preconexión a Google Fonts para una carga más rápida -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <!-- Estilos personalizados mediante Google Fonts: Arima Madurai (negritas) y Mulish (normal y negritas) -->
+        <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+            rel="stylesheet">
+        <!-- Hojas de estilo adicionales para normalizar y personalizar la apariencia -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+
+    <body>
+            <!-- Encabezado principal de la página -->
+        <header class="encabezado">
+                    <!-- Contenedor de navegación principal -->
+            <div class="contenedor-navegacion">
+                 <!-- Contenido interno del área de navegación -->
+                <div class="contenido-navegacion contenedor">
+                         <!-- Logo de la página -->
+                    <div class="logo">
+                        <!-- Título estilizado con colores -->
+                        <h2>App <span class="verde">mu</span><span>si</span><span class="rojo">c</span></h2>
+                    </div>
+                     <!-- Menú de navegación desplegable -->
+                    <nav class="navegacion ocultar">
+                         <!-- Enlaces a diferentes secciones -->
+                        <a href="#1">Inicio</a>
+                        <a href="#2">Sobre Nosotros</a>
+                        <a href="#3">Musicas</a>
+                        <a href="#4">Lo mejor de Hoy</a>
+                        <a href="#5">Contactanos</a>
+                    </nav>
+                    <!-- Ícono de menú hamburguesa para dispositivos móviles -->
+                    <div class="hamburguesa">
+                         <!-- Íconos de línea representativos -->
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+             <!-- Contenido del encabezado, incluyendo texto y video -->
+            <div class="contenido-header">
+                 <!-- Contenedor adicional para el encabezado -->
+                <div class="contenedor-encabezado">
+                      <!-- Texto principal del encabezado -->
+                    <div class="texto-encabezado">
+                            <!-- Título destacado -->
+                        <h2>App Music</h2>
+                          <!-- Botón de llamada a la acción -->
+                        <a href="#6" class="btn bordes">Escucha Musica Aqui</a>
+                    </div>
+                    <video autoplay loop muted>
+                        <source src="/assets/bg_video.mp4">
+                    </video>
+                </div>
+            </div>
+        </header>
+        <!-- Sección de nosotros con información y imágenes -->
+        <div class="contenedor-nosotros contenedor">
+            <div class="texto-nosotros" id="2"> 
+                <p class="bienvenida">Bienvenido a</p>
+                <h1>Las mejores Canciones del Mundo</h1>
+                <p>Escucha las musicas mas populares aqui de todos los tipos de genero que tu quieras, escuchar musica es
+                    relajarte y pensar por todo lo que pasaste en tu vida y que no mejor haciendolo con nosotros
+                </p>
+                <a href="#" class="btn btn-rojo">Click Aqui</a>
+            </div>
+              <!-- Galería de imágenes ilustrativas -->
+            <div class="imagenes-nosotros">
+                <div class="imagen1">
+                                 <!-- Imagen cargada de manera dinámica -->
+                    <img data-src="assets/img/nosotros1.jpg">
+                </div>
+                <!-- Imágenes adicionales para complementar -->
+                <div class="imagenes2">
+                    <!-- Imagen con descripción específica -->
+                    <img data-src="assets/img/nosotros2.jpg" alt="mujeres escuchando musica">
+                    <!-- Imagen genérica con representación visual -->
+                    <img data-src="assets/img/nosotros3.jpg" alt="musica">
+                </div>
+            </div>
+        </div>
+
+        <section class="menu contenedor">
+            <h2 class="texto-platillos" id="3">Musicas Populares</h2>
+               <!-- Botones de selección rápida de géneros -->
+            <div class="botones-platillos" id="6">
+                <button class="todos btn btn-verde">generos Aqui</button>
+                <button class="ensaladas btn btn-verde">Rock en español</button>
+                <button class="pasta btn btn-verde">Electronica</button>
+                <button class="pizza btn btn-verde">Baladas</button>
+                <button class="postres btn btn-verde">Regueton</button>
+            </div>
+            <div class="platillos">
+                <div class="platillo" data-platillo="ensalada">
+                    <img data-src="assets/img/ensalada.jpg" alt="ensalada">
+                       <!-- Título descriptivo -->
+                    <h2>Libido</h2>
+                    <!-- Descripción breve del contenido -->
+                    <p>En mi Habitacion, Como un Perro, Tan suave, Sin rencor, Tres</p>
+                    <!-- Información adicional como precio y acción -->
+                    <div class="precio">
+                        <!-- Indicación de gratuidad del contenido -->
+                        <p>Gratis</p>
+                        <!-- Botón interactivo para añadir al carrito -->
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                  <!-- Elemento adicional con características similares -->
+                <div class="platillo" data-platillo="ensalada">
+                    <!-- Imagen asociada al platillo -->
+                    <img data-src="assets/img/ensalada2.jpg" alt="ensalada">
+                    <!-- Título ampliado con múltiples elementos -->
+                    <h2>Los Lobos, La pistola y el corazón, Wake Up Dolores, Dream in Blue, Anselma</h2>
+                    <!-- Descripción concisa del contenido -->
+                    <p>La Bamba, Wake Up Dolores, We Belong Together, Los Lobos La tumba será el final</p>
+                      <!-- Sección de precio y acción interactiva -->
+                    <div class="precio">
+                        <!-- Indicación explícita de gratuidad -->
+                        <p>Gratis</p>
+                          <!-- Botón con icono para funcionalidad adicional -->
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                  <!-- Elemento singular con características particulares -->
+                <div class="platillo" data-platillo="ensalada">
+                    <!-- Representación visual de la musica -->
+                    <img data-src="assets/img/ensalada3.jpg" alt="ensalada">
+                            <!-- Nombre del grupo o artista principal -->
+                    <h2>Enanitos Verdes</h2>
+                       <!-- Información resumida del contenido -->
+                    <p>Tren del Sur, lamento boliviano, mariposas</p>
+                     <!-- Sección de costo y funcionalidad adicional -->
+                    <div class="precio">
+                         <!-- Indicación específica de gratuidad -->
+                        <p>Gratis</p>
+                         <!-- Botón interactivo con icono integrado -->
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <!-- Elemento individualizado con clasificación específica -->
+                <div class="platillo" data-platillo="pasta">
+                     <!-- Imagen visual asociada a la categoría -->
+                    <img data-src="assets/img/pasta1.jpg" alt="pasta">
+                    <h2>Martin Garrix</h2>
+                      <!-- Información resumida del contenido -->
+                    <p>Animals, Virus, Forbidden Voices, Runaway, Tremor</p>
+                    <div class="precio">
+                        <p>Gratis</p>
+                         <!-- Botón interactivo con icono integrado -->
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="pasta">
+                    <img data-src="assets/img/pasta2.jpg" alt="pasta">
+                    <h2>Tiesto</h2>
+                      <!-- Información resumida del contenido -->
+                    <p>Red Lights, CONTIGO, Thank You, The Motto, Seavolution</p>
+                    <div class="precio">
+                        <p>Gratis</p>
+                         <!-- Botón interactivo con icono integrado -->
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="pasta">
+                    <img data-src="assets/img/pasta3.jpg" alt="pasta">
+                    <h2>Avicii</h2>
+                      <!-- Información resumida del contenido -->
+                    <p>Wake me up, Levels, Hey Brother, The nights, SOS</p>
+                    <div class="precio">
+                        <p>Gratis</p>
+                         <!-- Botón interactivo con icono integrado -->
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="pizza">
+                    <img data-src="assets/img/pizza1.jpg" alt="pizza">
+                    <h2>Jose Jose</h2>
+                      <!-- Información resumida del contenido -->
+                    <p>El Triste, La nave del olvido, Lo dudo, He renuncido a ti</p>
+                    <div class="precio">
+                        <p>Gratis</p>
+                         <!-- Botón interactivo con icono integrado -->
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="pizza">
+                    <img data-src="assets/img/pizza2.jpg" alt="pizza">
+                    <h2>Roberto Carlos</h2>
+                      <!-- Información resumida del contenido -->
+                    <p>Un Gato en la Oscuridad, Cama y Mesa, Amigo, Amor Sin Limite</p>
+                    <div class="precio">
+                        <p>Gratis</p>
+                         <!-- Botón interactivo con icono integrado -->
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="pizza">
+                    <img data-src="assets/img/pizza3.jpg" alt="pizza">
+                    <h2>Camilo Sesto</h2>
+                      <!-- Información resumida del contenido -->
+                    <p>Piel de Angel, El amor de mi vida, Perdoname, Algo de mi</p>
+                    <div class="precio">
+                        <p>Gratis</p>
+                         <!-- Botón interactivo con icono integrado -->
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="postre">
+                    <img data-src="assets/img/postres1.jpg" alt="postre">
+                    <h2>Raw Alejandro</h2>
+                      <!-- Información resumida del contenido -->
+                    <p>Santa, Dream Girl, Toda, Mirame</p>
+                    <div class="precio">
+                        <p>Gratis</p>
+                         <!-- Botón interactivo con icono integrado -->
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="postre">
+                    <img data-src="assets/img/postres2.jpg" alt="postre">
+                    <h2>Daddy Yankee</h2>
+                      <!-- Información resumida del contenido -->
+                    <p>Gasolina, Con Calma, Despacito, Limbo, La Ocacion</p>
+                    <div class="precio">
+                        <p>Gratis</p>
+                         <!-- Botón interactivo con icono integrado -->
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+                <div class="platillo" data-platillo="postre">
+                    <img data-src="assets/img/postres3.jpg" alt="postre">
+                    <h2>Peso Pluma</h2>
+                      <!-- Información resumida del contenido -->
+                    <p>Bellakeo, Nueva Vida, PRC, La Bebe, Ella Baila Sola</p>
+                    <div class="precio">
+                        <p>Gratis</p>
+                         <!-- Botón interactivo con icono integrado -->
+                        <button><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="separador" id="4">
+             <!-- Contenido del separador -->
+            <div class="contenido-separador contenedor">
+                <h2>Musica para empresar el Dia</h2>
+                <p>Empieza tus días con estas canciones </p>
+                <a href="#" class="btn btn-verde">Escuchar ahora</a>
+            </div>
+        </div>
+
+        <section class="chef contenedor">
+            <h2>Cancion recomendada</h2>
+            <div class="contenido-chef">
+             <!-- Contenido del chef -->
+                <div class="texto-chef">
+                    <h3>Esta Canciones es la mas popular de hoy y actualizaremos todos los dias para una mejor experiencia
+                    </h3>
+                    <p>Las mejores Canciones te las recomendamos a mi solo escribenos y haznos saver que canciones no
+                        tenemos para mejorar nuestra pagina</p>
+                    <a href="https://www.youtube.com/watch?v=nt1hd4OTAnU" class="btn btn-verde">Click Aqui</a>
+                </div>
+                <div class="imagen-chef">
+                    <img data-src="/assets/img/chef.webp" alt="fotografia del chef">
+                </div>
+            </div>
+        </section>
+
+        <div class="formulario-contacto contenedor">
+             <!-- Sección de información de contacto -->
+            <div class="informacion-contacto">
+                <h3>Contactanos</h3>
+                <p><i class="fas fa-map-marker-alt"></i>399. Jose Pardo</p>
+                <p><i class="fas fa-envelope"></i> MusicaGratis@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i>+51 974 637 817</p>
+                <div class="redes-sociales">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <!-- Formulario de contacto -->
+            <form class="formulario">
+                <div class="input-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Pedro" id="nombre">
+                </div>
+                <div class="input-formulario">
+                    <label for="apellidos">Apellido</label>
+                    <input type="text" placeholder="Pedro" id="apellidos">
+                </div>
+                <div class="input-formulario">
+                    <label for="correo">Correo</label>
+                    <input type="email" placeholder="ejemplo@ejemplo.com" id="correo">
+                </div>
+                <div class="input-formulario">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" placeholder="+90 543 779 9410" id="telefono">
+                </div>
+                <div class="input-formulario">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea></textarea>
+                </div>
+                <div class="btn-formulario">
+                    <input type="submit" class="btn btn-verde" value="Enviar">
+                </div>
+
+            </form>
+        </div>
+        <div class="pie-pagina ">
+            <div class="contenedor-piepagina contenedor">
+                    <!-- Sección de información de contacto -->
+                <div class="info">
+                    <h3>Dirección</h3>
+                    <p>399. Jose Pardo</p>
+                </div>
+                <!-- Sección de días especiales de atención --> 
+                <div class="info">
+                    <h3>Días especiales</h3>
+                    <p>Sabados y Jueves 8am - 6pm</p>
+                    <p>+51 974 637 817</p>
+                </div>
+                <!-- Sección de horarios de atención -->
+                <div class="info">
+                    <h3>Horarios</h3>
+                    <p>Lunes - Domingo 8am - 9pm</p>
+                      <!-- Redes sociales -->
+                    <div class="redes-sociales redes-pie">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                 <!-- Sección de suscripción a noticias -->
+                <div class="info">
+                    <h3>Noticias</h3>
+                    <p>suscribete para recibir más noticias</p>
+                    <input type="email" placeholder="Tu correo">
+                    <input type="submit" class="btn btn-verde" value="Suscribirse">
+                </div>
+            </div>
+        </div>
+          <!-- Pie de página con derechos de autor -->
+        <footer class="footer" id="5">
+            <p>Todos los derechos reservados &copy; 2024 MusicaGratis, desarrollado por Lojant</p>
+        </footer>
+            <!-- Script de la aplicación -->
+        <script src="js/app.js"></script>
+
+    </body>
+
+    </html>
